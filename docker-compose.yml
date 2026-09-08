@@ -126,6 +126,7 @@ services:
     env_file: .env
     volumes:
       - n8n-data:/home/node/.n8n
+      - ./license.override.js:/usr/local/lib/node_modules/n8n/dist/license.js:ro
     healthcheck:
       test: ['CMD-SHELL', 'wget -qO- http://localhost:5678/healthz || exit 1']
       interval: 5s

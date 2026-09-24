@@ -1,0 +1,8 @@
+# SearXNG configuration for n8n AI assistant web search
+use_default_settings: true
+search:
+  formats:
+    - html
+    - json
+server:
+  limiter: false

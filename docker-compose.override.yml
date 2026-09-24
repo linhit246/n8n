@@ -1,0 +1,4 @@
+services:
+  n8n:
+    volumes:
+      - ./license.override.js:/usr/local/lib/node_modules/n8n/dist/license.js:ro
